@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Amy Bundgus for Texas State Board of Education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="Amy Bundgus for State Board of Education">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="meet-amy.html">Meet Amy</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a class="button donate active" href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small">
+      <div class="container">
+        <h1>Donate</h1>
+        <p>Your support fuels a campaign focused on students, parents, and strong schools.</p>
+      </div>
+    </section>
+
+    <section class="container content donate-section">
+      <div class="donate-grid">
+        <form class="donate-form" action="#" method="post">
+          <fieldset>
+            <legend>Select Amount</legend>
+            <div class="amount-grid">
+              <button type="button" class="amount" data-amt="25">$25</button>
+              <button type="button" class="amount" data-amt="50">$50</button>
+              <button type="button" class="amount" data-amt="100">$100</button>
+              <button type="button" class="amount" data-amt="250">$250</button>
+              <button type="button" class="amount" data-amt="500">$500</button>
+              <div class="amount custom">
+                <label for="customAmount">Other</label>
+                <input id="customAmount" name="customAmount" type="number" min="1" step="1" placeholder="Amount">
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text" required>
+          </div>
+          <button class="button donate" type="submit">Continue to Payment</button>
+          <p class="fineprint">Contributions are not tax-deductible. State law requires we use best efforts to collect and report name, address, occupation, and employer of individuals whose contributions exceed $90 in a reporting period.</p>
+        </form>
+        <aside class="donate-aside">
+          <div class="callout">
+            <h3>Chip in today</h3>
+            <p>Every dollar helps us reach more voters, support volunteers, and share Amy’s message of academic excellence.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav aria-label="Footer">
+        <ul class="footer-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="meet-amy.html">Meet Amy</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+      <p class="disclaimer">Pol. adv. paid for by Amy Bundgus for Texas.</p>
+      <p class="legal"><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms &amp; Conditions</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+<!-- Visual inspiration: https://www.lisamcentire.com/ -->
+</html>
+
+
