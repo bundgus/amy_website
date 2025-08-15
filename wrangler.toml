@@ -2,3 +2,7 @@
 name = "amyfortexas"
 compatibility_date = "2024-09-25"
 assets = { directory = "." }
+routes = [
+  { pattern = "amyfortexas.org", custom_domain = true },
+  { pattern = "www.amyfortexas.org", custom_domain = true }
+]
