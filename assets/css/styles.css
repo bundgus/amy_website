@@ -82,8 +82,10 @@ a:hover { text-decoration: underline; }
 
 .priorities { background: var(--surface); padding: 3rem 0; }
 .priorities-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }
-.priority-card { background: #fff; border: 1px solid #e7ecf3; padding: 1rem; border-radius: 6px; box-shadow: 0 1px 2px rgba(6,24,44,0.04); grid-column: span 2; }
+.priority-card { background: #fff; border: 1px solid #e7ecf3; padding: 1rem; border-radius: 6px; box-shadow: 0 1px 2px rgba(6,24,44,0.04); grid-column: span 2; text-decoration: none; color: inherit; display: block; transition: all 0.2s ease; }
+.priority-card:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(6,24,44,0.1); border-color: var(--brand-blue); }
 .priority-card h3 { color: var(--brand-blue); margin-bottom: 0.5rem; }
+.priority-card:hover h3 { color: var(--brand-navy); }
 
 .contact { padding: 3rem 0; }
 .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
