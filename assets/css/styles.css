@@ -128,6 +128,7 @@ a:hover { text-decoration: underline; }
 .legal a { color: #cfe0ff; }
 
 /* Legal pages */
+.legal { padding-left: 2rem; }
 .legal h1 { margin-bottom: 0.5rem; }
 .legal h2 { margin-top: 1.25rem; }
 
@@ -151,6 +152,7 @@ a:hover { text-decoration: underline; }
   .hero-media { height: clamp(540px, 85vh, 680px); }
   .header-inner { padding: 0.5rem 0; }
   .hero-content { place-items: center start; padding: 1rem 1rem 3.5rem; }
+  .legal { padding-left: 1rem; }
 }
 
 
