@@ -37,9 +37,149 @@
     </section>
 
     <section class="container content">
-      <div style="display:grid; place-items:center; padding: 3rem 0;">
-        <h2 class="section-title" style="margin: 0 0 0.5rem 0;">Coming Soon</h2>
-        <p class="policy" style="text-align:center; max-width: 48ch;">Sign-ups and volunteer options are being prepared. Please check back shortly.</p>
+      <div class="volunteer-intro">
+        <h2 class="section-title">Join Team Amy</h2>
+        <p class="intro-text">Help us bring academic excellence and conservative values to Texas education. There are many ways to get involved in our campaign.</p>
+      </div>
+
+      <div class="volunteer-form-container">
+        <form id="volunteerForm" class="volunteer-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required>
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="zipCode">ZIP Code *</label>
+            <input type="text" id="zipCode" name="zipCode" pattern="[0-9]{5}(-[0-9]{4})?" required>
+            <div class="error-message"></div>
+          </div>
+
+          <fieldset class="form-group">
+            <legend>How would you like to help? * (Select all that apply)</legend>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="canvassing">
+                <span class="checkmark"></span>
+                Door-to-door canvassing
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="phone-banking">
+                <span class="checkmark"></span>
+                Phone banking
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="events">
+                <span class="checkmark"></span>
+                Event planning and coordination
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="data-entry">
+                <span class="checkmark"></span>
+                Data entry and administration
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="social-media">
+                <span class="checkmark"></span>
+                Social media and outreach
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="fundraising">
+                <span class="checkmark"></span>
+                Fundraising support
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="research">
+                <span class="checkmark"></span>
+                Policy research
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="other">
+                <span class="checkmark"></span>
+                Other (please specify in message)
+              </label>
+            </div>
+            <div class="error-message"></div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="availability">When are you typically available?</label>
+            <select id="availability" name="availability">
+              <option value="">Select availability</option>
+              <option value="weekday-mornings">Weekday mornings</option>
+              <option value="weekday-afternoons">Weekday afternoons</option>
+              <option value="weekday-evenings">Weekday evenings</option>
+              <option value="weekends">Weekends</option>
+              <option value="flexible">Flexible schedule</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Previous volunteer or campaign experience</label>
+            <textarea id="experience" name="experience" rows="3" placeholder="Tell us about any relevant experience..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional comments or questions</label>
+            <textarea id="message" name="message" rows="4" placeholder="Is there anything else you'd like us to know?"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label newsletter-signup">
+              <input type="checkbox" name="subscribeNewsletter" checked>
+              <span class="checkmark"></span>
+              Subscribe to campaign updates and newsletter
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="button primary submit-btn">
+              <span class="btn-text">Join Team Amy</span>
+              <span class="btn-loading" style="display: none;">Submitting...</span>
+            </button>
+          </div>
+
+          <div id="formMessage" class="form-message" style="display: none;"></div>
+        </form>
+      </div>
+
+      <div class="volunteer-info">
+        <h3>Other Ways to Support</h3>
+        <div class="support-options">
+          <div class="support-option">
+            <h4>Spread the Word</h4>
+            <p>Share our message with friends, family, and neighbors. Follow us on social media and help amplify our campaign.</p>
+          </div>
+          <div class="support-option">
+            <h4>Host an Event</h4>
+            <p>Organize a meet-and-greet or house party in your community to help Amy connect with more voters.</p>
+          </div>
+          <div class="support-option">
+            <h4>Display Campaign Materials</h4>
+            <p>Show your support with yard signs, bumper stickers, and other campaign materials in your neighborhood.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>

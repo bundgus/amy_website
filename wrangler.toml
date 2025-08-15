@@ -1,8 +1,15 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "amyfortexas"
+main = "src/worker.js"
 compatibility_date = "2024-09-25"
 assets = { directory = "." }
+
 routes = [
   { pattern = "amyfortexas.org", custom_domain = true },
   { pattern = "www.amyfortexas.org", custom_domain = true }
 ]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "amyfortexas-volunteers"
+database_id = "63502aa4-ab91-47e6-bf8d-d04d6c3cef2b"
